@@ -1,0 +1,105 @@
+{
+    "name": "@enteocode/nestjs-mfa",
+    "version": "1.0.0",
+    "description": "Implementation agnostic RFC-compliant Multi-Factor Authentication (2FA/MFA) module for NestJS with recovery code support",
+    "module": "dist/index.mjs",
+    "main": "dist/index.js",
+    "types": "dist/types/index.d.ts",
+    "author": {
+        "name": "Ádám Székely",
+        "url": "https://www.linkedin.com/in/enteocode/"
+    },
+    "license": "MIT",
+    "scripts": {
+        "build": "rollup -c --environment NODE_ENV:production",
+        "lint": "eslint \"{src,test}/**/*.ts\" --max-warnings 0",
+        "lint:fix": "eslint \"{src,test}/**/*.ts\" --fix",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage",
+        "prepare": "husky",
+        "release": "standard-version",
+        "prepack": "npm run build"
+    },
+    "keywords": [
+        "nest",
+        "nestjs",
+        "authentication",
+        "mfa",
+        "2fa",
+        "otp",
+        "qr-code",
+        "totp",
+        "keyv",
+        "recovery-codes",
+        "express",
+        "fastify",
+        "nis2",
+        "gdpr",
+        "security"
+    ],
+    "engines": {
+        "node": ">=20"
+    },
+    "peerDependencies": {
+        "@nestjs/common": "^9.0 || ^10.0 || ^11.0",
+        "@nestjs/core": "^9.0 || ^10.0 || ^11.0",
+        "@nestjs/event-emitter": "*",
+        "class-validator": "*",
+        "keyv": "*",
+        "reflect-metadata": "^0.1.13 || ^0.2.0"
+    },
+    "dependencies": {
+        "@otplib/core": "^12.0.1",
+        "@otplib/plugin-crypto": "^12.0.1",
+        "@otplib/plugin-thirty-two": "^12.0.1",
+        "@types/qrcode": "^1.5.5",
+        "qrcode": "^1.5.4",
+        "sharp": "^0.34.1",
+        "uuid": "^11.1.0"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^19.8.0",
+        "@commitlint/config-conventional": "^19.8.0",
+        "@eslint/js": "^9.25.0",
+        "@nestjs/common": "^11.0.20",
+        "@nestjs/core": "^11.0.20",
+        "@nestjs/event-emitter": "^3.0.1",
+        "@nestjs/platform-fastify": "^11.0.20",
+        "@nestjs/testing": "^11.0.20",
+        "@rollup/plugin-terser": "^0.4.4",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "@rollup/wasm-node": "^4.40.0",
+        "@types/jest": "^29.5.14",
+        "@types/node": "^20.17.30",
+        "class-validator": "^0.14.1",
+        "eslint": "^9.25.0",
+        "eslint-config-prettier": "^10.1.2",
+        "eslint-plugin-prettier": "^5.2.6",
+        "fastify": "^5.3.2",
+        "husky": "^9.1.7",
+        "jest": "^29.7.0",
+        "keyv": "^5.3.3",
+        "lint-staged": "^15.5.1",
+        "prettier": "^3.5.3",
+        "reflect-metadata": "^0.2.2",
+        "rollup": "^4.40.0",
+        "rollup-plugin-delete": "^3.0.1",
+        "standard-version": "^9.5.0",
+        "ts-jest": "^29.3.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3",
+        "typescript-eslint": "^8.30.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/enteocode/nestjs-mfa.git"
+    },
+    "bugs": {
+        "url": "https://github.com/enteocode/nestjs-mfa/issues"
+    },
+    "files": [
+        "dist",
+        "LICENSE"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "noEmit": true,
+        "module": "ESNext",
+        "target": "ES2021",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "baseUrl": "./",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "preserveConstEnums": true,
+        "allowJs": true,
+        "alwaysStrict": true,
+        "isolatedModules": true
+    },
+    "exclude": [
+        "dist",
+        "rollup.config.mjs"
+    ]
+}

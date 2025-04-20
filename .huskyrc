@@ -1,0 +1,6 @@
+{
+    "hooks": {
+        "pre-commit": "npx lint-staged && npm test",
+        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+}
