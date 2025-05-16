@@ -48,15 +48,11 @@ Configure using `forRoot` or `forRootAsync`, according to NestJS standards:
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { EventEmitterModule } from '@nestjs/event-emitter';
 import { MfaModule } from '../src';
 import { createKeyv } from '@keyv/redis';
 
 @Module({
     imports: [
-        // Required for events
-        EventEmitterModule.forRoot(),
-        
         MfaModule.forRoot({
             // Displayed in authenticator apps
             issuer: 'My Application',
