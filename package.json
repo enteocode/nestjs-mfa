@@ -45,8 +45,8 @@
         "@nestjs/common": "^9.0 || ^10.0 || ^11.0",
         "@nestjs/core": "^9.0 || ^10.0 || ^11.0",
         "@nestjs/event-emitter": "^1.0 || ^2.0 || ^3.0",
-        "class-validator": "^0.11",
-        "keyv": "^1.0 || ^2.0 || ^3.0 || ^4.0 || ^5.0",
+        "class-validator": "^0.11.1 || ^0.12 || ^0.13 || ^0.14",
+        "keyv": "^5.0",
         "reflect-metadata": "^0.1.13 || ^0.2.0"
     },
     "dependencies": {
