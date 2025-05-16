@@ -1,6 +1,6 @@
 {
     "name": "@enteocode/nestjs-mfa",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Implementation agnostic RFC-compliant Multi-Factor Authentication (2FA/MFA) module for NestJS with recovery code support",
     "module": "dist/index.mjs",
     "main": "dist/index.js",
